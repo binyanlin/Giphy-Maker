@@ -17,7 +17,7 @@ const list = ["wombo combo", "zelda", "westballz", "eevee", "persona", "joestar"
 const buttonMaker = () => {
   $(".buttonStuff").empty();
   for (i=0; i<list.length; i++) {
-    let button = $(`<button class="btn btn-search alert-info mx-2" id="button-${i}">`).text(list[i]);
+    let button = $(`<button class="btn btn-search alert-info mx-2 my-2" id="button-${i}">`).text(list[i]);
     $(".buttonStuff").append($(`<div class=".col-sm">`).append(button));
   };
 };

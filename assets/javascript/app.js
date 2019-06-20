@@ -34,7 +34,7 @@ $(document).on("click", ".btn-search", function() {
   if (limit) {
     $(query).append(`&q=limit:${limit}`);
   };
-  let queryURL = `http://api.giphy.com/v1/gifs/search?q=${query}&api_key=9xitpxMgOEVsyAOoJRF0Sg8kjmAjOkVh`
+  let queryURL = `https://api.giphy.com/v1/gifs/search?q=${query}&api_key=9xitpxMgOEVsyAOoJRF0Sg8kjmAjOkVh`
   // console.log(queryURL);
   $.ajax({
     url: queryURL,
